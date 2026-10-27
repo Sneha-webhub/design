@@ -1,0 +1,171 @@
+
+:root {
+    --bg-color: #f2efe9;        
+    --card-bg: #18181b;         
+    --accent: #ff5e36;          
+    --accent-yellow: #facc15;   
+    --text-light: #f4f4f5;
+    --text-muted: #a1a1aa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.invite-card {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    max-width: 440px;
+    width: 100%;
+    padding: 36px 30px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Stamp Tag on Top Right */
+.pass-tag {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    transform: rotate(4deg);
+}
+
+/* Handwritten Feel */
+.handwriting {
+    font-family: 'Caveat', cursive;
+    color: var(--accent-yellow);
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* Bold Modern Headline */
+.main-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+.sub-text {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* Ticket/Pass Separator */
+.dashed-line {
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.15);
+    margin-bottom: 24px;
+    position: relative;
+}
+
+/* Grid Layout for Time & Date */
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.detail-item.full-width {
+    grid-column: span 2;
+}
+
+.label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Note Section */
+.note-box {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.handwriting-small {
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+    color: var(--accent-yellow);
+}
+
+/* Footer Section */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.rsvp-title {
+    font-size: 10px;
+    color: var(--text-muted);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.rsvp-name {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+
+
+.entry-btn {
+    background-color: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.entry-btn:hover {
+    background-color: #e04b24;
+    transform: translateY(-2px);
+}
